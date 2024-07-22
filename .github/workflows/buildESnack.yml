@@ -3,7 +3,7 @@ name: Deploy Microservice Delete Snack to Amazon ECS
 on:
   push:
     paths:
-      - 'DMicroservicioEliminarSnacks/**'
+      - 'DMicroservicioEliminarSnack/**'
     branches:
       - main
 
@@ -41,7 +41,7 @@ jobs:
         env:
           IMAGE_TAG: latest
         run: |
-          docker build -t ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:$IMAGE_TAG ./DMicroservicioEliminarSnacks
+          docker build -t ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:$IMAGE_TAG ./DMicroservicioEliminarSnack
           docker push ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:$IMAGE_TAG
           echo "image=${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:$IMAGE_TAG" >> $GITHUB_OUTPUT
 
