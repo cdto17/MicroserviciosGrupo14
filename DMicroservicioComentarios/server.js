@@ -9,7 +9,6 @@ const swaggerJSDoc = require('swagger-jsdoc');
 const app = express();
 const port = 4012;
 
-// Conectar a MongoDB
 connectDB();
 
 // Middleware
