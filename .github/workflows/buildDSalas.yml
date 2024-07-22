@@ -11,10 +11,10 @@ env:
   AWS_REGION: us-east-2
   ECR_REGISTRY: 339712766050.dkr.ecr.us-east-2.amazonaws.com
   ECR_REPOSITORY: grupo14-mcsrv-delete-rooms
-  ECS_SERVICE: srv-update-movies_
-  ECS_CLUSTER: g14-microservices_
-  CONTAINER_NAME: updateMovie_
-  TASK_DEFINITION_NAME: task-microservicios-g14_
+  ECS_SERVICE: srv-delete-rooms
+  ECS_CLUSTER: g14-mcsrv-delete-rooms
+  CONTAINER_NAME: deleteRooms
+  TASK_DEFINITION_NAME: task14-mcsrv-delete-rooms
 
 jobs:
   deploy:

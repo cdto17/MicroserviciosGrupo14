@@ -15,6 +15,8 @@ const createComment = async (req, res) => {
   }
 };
 
+
+
 const getComments = async (req, res) => {
   try {
     const comments = await Comment.find();

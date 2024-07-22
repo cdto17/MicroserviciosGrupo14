@@ -20,6 +20,7 @@ app.use(bodyParser.json());
 app.use('/api', cinemasRoutes); 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+
 app.listen(port, () => {
   console.log(`Microservice list cinema listening at http://localhost:${port}`);
   console.log(`http://localhost:4020/api-docs`);

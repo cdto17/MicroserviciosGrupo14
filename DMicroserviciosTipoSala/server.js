@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
   res.status(200).json({ status: 'ok', message: 'Microservice Login Running' });
 });
 
+
 app.use(cors({
   origin: 'http://lb-grupo14-app-cinema-2120355127.us-east-2.elb.amazonaws.com'
 }));

@@ -11,10 +11,10 @@ env:
   AWS_REGION: us-east-2
   ECR_REGISTRY: 339712766050.dkr.ecr.us-east-2.amazonaws.com
   ECR_REPOSITORY: grupo14-mcsrv-payments
-  ECS_SERVICE: srv-update-movies_
-  ECS_CLUSTER: g14-microservices_
-  CONTAINER_NAME: updateMovie_
-  TASK_DEFINITION_NAME: task-microservicios-g14_
+  ECS_SERVICE: srv-payments
+  ECS_CLUSTER: g14-mcsrv-payments
+  CONTAINER_NAME: paymentR
+  TASK_DEFINITION_NAME: task14-mcsrv-payments
 
 jobs:
   deploy:
