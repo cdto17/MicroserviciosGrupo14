@@ -19,6 +19,7 @@ app.use(bodyParser.json());
 app.use('/api', cinemaRoutes);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+
 app.listen(port, () => {
   console.log(`Movies service listening at http://localhost:${port}`);
   console.log(`Movies service listening at http://localhost:${port}/api/cinemas`);
